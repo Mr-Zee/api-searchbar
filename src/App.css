@@ -3,8 +3,17 @@
 }
 
 .display-image {
-  columns: 6 200px;
+  columns: 5 400px;
   column-gap: 10px;
+}
+
+input {
+  margin-bottom: 20px;
+  height: 40px;
+  width: auto;
+  border: 2px solid rgb(134, 133, 133);
+  border-radius: 25px;
+  text-align: center;
 }
 
 img {

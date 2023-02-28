@@ -6,6 +6,7 @@ function SearchBar({ onSubmit }) {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     onSubmit(term);
+    // setTerm("");
   };
   const handleChange = (e) => {
     setTerm(e.target.value.replace(/[0-9]/, ""));
@@ -14,7 +15,12 @@ function SearchBar({ onSubmit }) {
   return (
     <div>
       <form onSubmit={handleFormSubmit}>
-        <input type="text" value={term} onChange={handleChange} />
+        <input
+          type="text"
+          value={term}
+          onChange={handleChange}
+          placeholder="Search here"
+        />
       </form>
     </div>
   );
